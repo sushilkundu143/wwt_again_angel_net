@@ -80,7 +80,7 @@ class SearchBar extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classes.search} style={{ marginTop: 20 }}>
+      <div className={classes.search} >
         {/*<div className={classes.searchIcon}>
           <SearchIcon />
         </div>*/}

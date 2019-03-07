@@ -1,0 +1,39 @@
+<div class="box">
+							<div class="login">
+								<div class="title">
+									<h2>Your network is your net worth</h2>
+									<p>Join Global Network - its Free</p>
+								</div>
+								<form name="signupForm" class="form ng-pristine ng-valid ng-valid-pattern ng-valid-email" ng-submit="signup()">
+									<div class="form-group" ng-class="{ 'has-error' : signupForm.first_name.$invalid &amp;&amp; signupForm.first_name.$dirty, 'has-success' : signupForm.first_name.$valid &amp;&amp; signupForm.first_name.$dirty}">
+										<label>First Name</label>
+										<input name="first_name" class="form-control ng-pristine ng-untouched ng-valid ng-empty ng-valid-pattern" type="text" placeholder="Enter first name" ng-model="user.first_name" ng-pattern="/^[A-Za-z][A-Za-z0-9- ]+/">
+									</div>
+
+									<div class="form-group" ng-class="{ 'has-error' : signupForm.last_name.$invalid &amp;&amp; signupForm.last_name.$dirty, 'has-success' : signupForm.last_name.$valid &amp;&amp; signupForm.last_name.$dirty}">
+										<label>Last Name</label>
+										<input name="last_name" class="form-control ng-pristine ng-untouched ng-valid ng-empty ng-valid-pattern" type="text" placeholder="Enter last name" ng-model="user.last_name" ng-pattern="/^[A-Za-z][A-Za-z0-9- ]+/">
+									</div>
+
+									<div class="form-group" ng-class="{ 'has-error' : signupForm.email.$invalid &amp;&amp; signupForm.email.$dirty, 'has-success' : signupForm.email.$valid &amp;&amp; signupForm.email.$dirty}">
+										<label>Email</label>
+										<input name="email" class="form-control ng-pristine ng-untouched ng-valid ng-empty ng-valid-email" type="email" placeholder="Enter email" ng-model="user.email">
+									</div>
+
+									<div class="form-group" ng-class="{ 'has-error' : signupForm.password.$invalid &amp;&amp; signupForm.password.$dirty, 'has-success' : signupForm.email.$valid &amp;&amp; signupForm.email.$dirty}">
+										<label>Password</label>
+										<input name="password" class="form-control ng-pristine ng-untouched ng-valid ng-empty" type="password" placeholder="Enter Password" ng-model="user.password">
+									</div>
+									
+									<div class="row tools">
+										<div class="col-md-12">
+												<input name="cc" id="s1" required="" type="checkbox"><label for="s1"><span></span> I agree to the Terms and Conditions.</label>
+											
+										</div>
+										
+									</div>
+									<button disabled="disabled" class="btn btn-block btn-primary btn-lg" ng-disabled="signupForm.$invalid || !signupForm.$dirty || up_loading">Sign Up <i class="fa fa-spinner fa-spin ng-hide" ng-show="up_loading"></i></button>
+								</form>
+							</div>
+							
+						</div>

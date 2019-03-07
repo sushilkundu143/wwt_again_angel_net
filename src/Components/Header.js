@@ -108,12 +108,27 @@ var notifications = [
 ];
 
 class PrimarySearchAppBar extends React.Component {
-  state = {
+  constructor(props){
+    super(props);
+  this.state = {
     anchorEl: null,
     mobileMoreAnchorEl: null,
     NotificationsAnchorEl: null,
-    Notifications: notifications
+    Notifications: notifications,
   };
+this.logout=this.logout.bind(this);
+this.renderNotification=this.renderNotification.bind(this);
+this.handleProfileMenuOpen=this.handleProfileMenuOpen.bind(this);
+this.handleMenuClose=this.handleMenuClose.bind(this);
+this.handleMobileMenuOpen=this.handleMobileMenuOpen.bind(this);
+this.handleNotificationsOpen=this.handleNotificationsOpen.bind(this);
+this.handleMobileMenuClose=this.handleMobileMenuClose.bind(this);
+this.handleNotificationsClose=this.handleNotificationsClose.bind(this);
+}
+logout(){
+  sessionStorage.setItem('token_angel_net','');
+  this.props.setState({loggedIn:false})
+}
   renderNotification = (tab, index) => {
     return (
       <ShortNotification Heading={tab.Heading} SubHeading={tab.SubHeading} />
@@ -156,6 +171,7 @@ class PrimarySearchAppBar extends React.Component {
         onClose={this.handleMenuClose}
       >
         <MenuItem onClick={this.handleMenuClose}>
+        <Link to ='/analysis' style={{display:'flex',flexDirection:'row' , width:'100%'}}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -165,7 +181,8 @@ class PrimarySearchAppBar extends React.Component {
             <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
           </svg>
 
-          <p style={{ marginLeft: 10 }}>Scheduler</p>
+          <p style={{ marginLeft: 10 }}>Analysis</p>
+          </Link>
         </MenuItem>
         {/*<MenuItem onClick={this.handleMenuClose}>
         <Link to='/blog'>
@@ -180,9 +197,9 @@ class PrimarySearchAppBar extends React.Component {
           </svg>
           <p style={{ marginLeft: 10 }}>Blog</p>
           </Link>
-        </MenuItem>
+    </MenuItem>*/}
         <MenuItem onClick={this.handleMenuClose}>
-        <Link to='/blog'>
+        <Link to='/events' style={{display:'flex',flexDirection:'row',width:'100%'}}>
                   <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -193,9 +210,9 @@ class PrimarySearchAppBar extends React.Component {
           </svg>
           <p style={{ marginLeft: 10 }}>Events</p>
           </Link>
-    </MenuItem>*/}
+    </MenuItem>
         <MenuItem onClick={this.handleMenuClose}>
-        <Link to='/jobs-page' style={{display:'flex',flexDirection:'row'}} > 
+        <Link to='/jobs-page' style={{display:'flex',flexDirection:'row',width:'100%'}} > 
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -221,8 +238,9 @@ class PrimarySearchAppBar extends React.Component {
 
           <p style={{ marginLeft: 10 }}>News</p>
           </Link>
-        </MenuItem>
+        </MenuItem>*/}
         <MenuItem onClick={this.handleMenuClose}>
+         <Link to='/partnership' style={{display:'flex',flexDirection:'row',width:'100%'}}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="18"
@@ -232,7 +250,9 @@ class PrimarySearchAppBar extends React.Component {
             <path d="M6 8c1.11 0 2-.9 2-2s-.89-2-2-2c-1.1 0-2 .9-2 2s.9 2 2 2zm6 0c1.11 0 2-.9 2-2s-.89-2-2-2c-1.11 0-2 .9-2 2s.9 2 2 2zM6 9.2c-1.67 0-5 .83-5 2.5V13h10v-1.3c0-1.67-3.33-2.5-5-2.5zm6 0c-.25 0-.54.02-.84.06.79.6 1.34 1.4 1.34 2.44V13H17v-1.3c0-1.67-3.33-2.5-5-2.5z" />
           </svg>
           <p style={{ marginLeft: 10 }}>PartnerShip</p>
+          </Link>
         </MenuItem>
+        {/*
         <MenuItem onClick={this.handleMenuClose}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -281,7 +301,7 @@ class PrimarySearchAppBar extends React.Component {
           <p style={{ marginLeft: 10 }}>AngelNet TV</p>
         </MenuItem>*/}
         <MenuItem onClick={this.handleMenuClose}>
-        <Link to='/trending' style={{display:'flex',flexDirection:'row'}} >  
+        <Link to='/trending' style={{display:'flex',flexDirection:'row',width:'100%'}} >  
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -294,7 +314,7 @@ class PrimarySearchAppBar extends React.Component {
           </Link>
         </MenuItem>
         <MenuItem onClick={this.handleMenuClose}>
-          <Link to="/global-classroom" style={{display:'flex',flexDirection:'row'}}>
+          <Link to="/global-classroom" style={{display:'flex',flexDirection:'row',width:'100%',}}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -307,6 +327,12 @@ class PrimarySearchAppBar extends React.Component {
             <p style={{ marginLeft: 10 }}>Global Classroom</p>
           </Link>
         </MenuItem>
+        <MenuItem onClick={this.handleMenuClose}>
+        <Link to='/settings' style={{display:'flex',flexDirection:'row',width:'100%'}}>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20"><path fill="none" d="M0 0h20v20H0V0z"/><path d="M15.95 10.78c.03-.25.05-.51.05-.78s-.02-.53-.06-.78l1.69-1.32c.15-.12.19-.34.1-.51l-1.6-2.77c-.1-.18-.31-.24-.49-.18l-1.99.8c-.42-.32-.86-.58-1.35-.78L12 2.34c-.03-.2-.2-.34-.4-.34H8.4c-.2 0-.36.14-.39.34l-.3 2.12c-.49.2-.94.47-1.35.78l-1.99-.8c-.18-.07-.39 0-.49.18l-1.6 2.77c-.1.18-.06.39.1.51l1.69 1.32c-.04.25-.07.52-.07.78s.02.53.06.78L2.37 12.1c-.15.12-.19.34-.1.51l1.6 2.77c.1.18.31.24.49.18l1.99-.8c.42.32.86.58 1.35.78l.3 2.12c.04.2.2.34.4.34h3.2c.2 0 .37-.14.39-.34l.3-2.12c.49-.2.94-.47 1.35-.78l1.99.8c.18.07.39 0 .49-.18l1.6-2.77c.1-.18.06-.39-.1-.51l-1.67-1.32zM10 13c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3z"/></svg>
+          <p style={{ marginLeft: 10 }}>Settings</p>
+          </Link>
+    </MenuItem>
       </Menu>
     );
 
@@ -325,7 +351,8 @@ class PrimarySearchAppBar extends React.Component {
               display: "flex",
               flexDirection: "row",
               alignItems: "center",
-              justifyContent: "center"
+              justifyContent: "center",
+              width:'100%'
             }}
           >
             <IconButton color="inherit">
@@ -342,7 +369,8 @@ class PrimarySearchAppBar extends React.Component {
               display: "flex",
               flexDirection: "row",
               alignItems: "center",
-              justifyContent: "center"
+              justifyContent: "center",
+              width:'100%'
             }}
           >
             <IconButton color="inherit">
@@ -358,7 +386,8 @@ class PrimarySearchAppBar extends React.Component {
               display: "flex",
               flexDirection: "row",
               alignItems: "center",
-              justifyContent: "center"
+              justifyContent: "center",
+              width:'100%'
             }}
           >
             <IconButton color="inherit">
@@ -392,6 +421,7 @@ class PrimarySearchAppBar extends React.Component {
               width="24"
               height="24"
               viewBox="0 0 24 24"
+              onClick={this.logout}
             >
               <path d="M10.09 15.59L11.5 17l5-5-5-5-1.41 1.41L12.67 11H3v2h9.67l-2.58 2.59zM19 3H5c-1.11 0-2 .9-2 2v4h2V5h14v14H5v-4H3v4c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z" />
             </svg>
@@ -462,15 +492,15 @@ class PrimarySearchAppBar extends React.Component {
             />
 
             <Typography style={{ marginLeft: 10 }}>
-              <h1
+              <p
                 style={{
                   color: "#3fa6e6",
-                  fontWeigth: "bold",
+                  
                   fontSize: 30
                 }}
               >
                 AngelNet
-              </h1>
+              </p>
             </Typography>
             <Hidden smDown>
               <div className={classes.search}>
@@ -478,7 +508,7 @@ class PrimarySearchAppBar extends React.Component {
                   <SearchIcon />
                 </div>
                 <InputBase
-                  placeholder="Search…"
+                  placeholder="Search"
                   classes={{
                     root: classes.inputRoot,
                     input: classes.inputInput
@@ -501,7 +531,8 @@ class PrimarySearchAppBar extends React.Component {
                     flexDirection: "row",
                     alignItems: "center",
                     justifyContent: "center",
-                    color: "#fff"
+                    color: "#fff",
+                    width:'100%'
                   }}
                 >
                   <IconButton color="inherit">
@@ -528,7 +559,8 @@ class PrimarySearchAppBar extends React.Component {
                     flexDirection: "row",
                     alignItems: "center",
                     justifyContent: "center",
-                    color: "#fff"
+                    color: "#fff",
+                    width:'100%'
                   }}
                 >
                   <IconButton color="inherit">
@@ -555,7 +587,8 @@ class PrimarySearchAppBar extends React.Component {
                     flexDirection: "row",
                     alignItems: "center",
                     justifyContent: "center",
-                    color: "#fff"
+                    color: "#fff",
+                    width:'100%'
                   }}
                 >
                   <IconButton color="inherit">
@@ -586,7 +619,8 @@ class PrimarySearchAppBar extends React.Component {
                           flexDirection: "column",
                           color: "#fff",
                           alignItems: "center",
-                          justifyContent: "center"
+                          justifyContent: "center",
+                          width:'100%'
                         }}
                       >
                         <MailIcon />
@@ -647,6 +681,7 @@ class PrimarySearchAppBar extends React.Component {
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
+                    onClick={this.logout}
                   >
                     <path
                       style={{ fill: "#fff" }}

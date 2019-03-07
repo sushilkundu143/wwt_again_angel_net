@@ -48,7 +48,7 @@ export default class JobsPage extends Component {
             }}
           >
             <SearchBar Placeholder="Enter Keywords" />
-            <div style={{ marginTop: 29, marginLeft: 10 }}>
+            <div style={{ marginTop: 10, marginLeft: 10 }}>
               <SelectLocation
                 Placeholder="Enter Location"
                 choice1="Delhi"
@@ -56,7 +56,7 @@ export default class JobsPage extends Component {
                 choice3="Chennai"
               />
             </div>
-            <div style={{ marginTop: 29 }}>
+            <div style={{ marginTop: 10 }}>
               <SelectLocation
                 Placeholder="Enter Cateogory"
                 choice1="Java"
@@ -64,7 +64,7 @@ export default class JobsPage extends Component {
                 choice3="Teaching"
               />
             </div>
-            <div style={{ marginTop: 29 }}>
+            <div style={{ marginTop: 10 }}>
               <Button
                 style={{
                   color: "#869aa6",

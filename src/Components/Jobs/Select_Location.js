@@ -23,7 +23,7 @@ export default class SelectLocation extends Component {
     "Pune",
     "Faridabad"
   ];
-  formControl: {
+  formControl= {
     margin: 5,
     minWidth: 120,
     maxWidth: 300,
