@@ -53,16 +53,7 @@ export default class LoginPage extends Component {
             show_popup_signin: false
         });
     };
-    //  handleChangeFirstName(){
 
-    //  }
-    //  handleChangeLastName(){
-
-    //  }
-
-    //  validateFirstName(){
-
-    //  }
     Popup_signIn() {
         this.setState({
             show_popup_signin: true
@@ -82,21 +73,6 @@ export default class LoginPage extends Component {
         });
         console.log(this.state.checked);
     };
-    //  handleChangePassword(){
-
-    //  }
-    //  validateConfirmPassword(){
-
-    //  }
-    //  validateLastName(){
-
-    //  }
-    //   validateEmail(){
-
-    //   }
-    //   validatePassword(){
-
-    //   }
 
     OnLogin = (event) => {
         event.preventDefault();
@@ -256,7 +232,7 @@ render(){
         </Dialog>
             </div>
         </nav>
-{/*header over*/}
+
 
             <div className="row">
             <div className="col-sm-8 col-lg-8">
