@@ -76,6 +76,8 @@ export default class  App extends Component {
         return (<Login loggin={this.LoginFunction} logout={this.Logout} setState={p=>{this.setState(p)}}/>);
     }
   }
+ 
+}
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
