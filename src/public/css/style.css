@@ -3021,9 +3021,11 @@ footer {
   height: 174px;
   object-fit: cover;
 }
+/*
 .row {
   margin: 0;
 }
+*/
 .gallery_pt > a {
   position: absolute;
   top: 100%;
@@ -5358,4 +5360,8 @@ a:hover {
 }
 .widget-feat ul li i.fa-eye {
   color: #00b540;
+}
+
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(248, 124, 124, 0.175)!important;
 }
