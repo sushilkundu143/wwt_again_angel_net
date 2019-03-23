@@ -137,7 +137,7 @@ section {
 }
 body {
   line-height: 1;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Lato","Source Sans Pro", sans-serif !important;
   overflow-x: hidden;
   font-weight: 400;
   background-color: #f2f2f2;
