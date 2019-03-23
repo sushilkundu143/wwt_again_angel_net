@@ -81,6 +81,10 @@ export default class LoginPage extends Component {
             alert('Email and Password cannot be empty');
             return;
         } else {
+            this.props.setState({
+                loggedIn: true
+            })
+            /*
             axios.post('/login', {
                 email: this.state.email,
                 password: this.state.password
@@ -102,7 +106,7 @@ export default class LoginPage extends Component {
                 alert(err);
                 return;
             })
-
+            */
         }
 
     }
@@ -154,7 +158,7 @@ render(){
    
     return(
         <div className="container-fluid">
-        <div className="row" style={{marginRight:-15,marginLeft:-15}}>
+        <div className="row">
         <nav className="navbar navbar-expand-lg navbar-light shadow-lg" style={{
             backgroundColor:'#0b3253',
             width: '100%'
@@ -281,7 +285,63 @@ render(){
         </div>
          </div>
        </div>
-      </div>
+       </div>
+       <div className="row">
+       <footer className="colored">
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-6">
+                        <small>General</small><br />
+                        <ul className="pull-left">
+                                <li><a href="">About Us</a></li>
+                                <li><a ui-sref="user.default.help" href="/help">Help</a></li>
+                                <li><a ui-sref="user.default.terms" href="/terms-of-use">Terms of Use</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div className="col-md-6">
+                            <small>Advance</small><br />
+                            <ul className="pull-left">
+                                    <li><a ui-sref="user.default.angeltv" href="/tv">AngelNet Tv</a></li>
+                                    <li><a>Mobile</a></li>
+                                    <li><a ui-sref="user.default.events" href="/events">Events</a></li>
+                                    <li><a ui-sref="user.default.news" href="/news">News</a></li>
+                                    <li><a ui-sref="user.default.blogs" href="/blog">Blog</a></li>
+                                    <li><a ui-sref="user.default.job" href="/job">Jobs</a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-6">
+                        <small>More</small><br />
+                        <ul className="pull-left">
+                                <li><a ui-sref="user.default.success-story" href="/success-story">Success stories</a></li>
+                                <li><a href="">Influencers</a></li>
+                                <li><a ui-sref="user.default.classRoom" href="/class/room">Global Classroom</a></li>
+                        </ul>
+                    </div>
+                    <div className="col-md-6">
+                            <small>User Guidelines</small><br />
+                            <ul className="pull-left">
+                                <li><a href="">Community Guidelines</a></li>
+                                <li><a href="">Cookie Policy</a></li>
+                                <li><a href="">Copyright Policy</a></li>
+                                <li><a href="">User Agreement</a></li>
+                            </ul>
+                        </div>
+                </div>
+                </div>
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="col-md-12 more_menu">
+                            <div className="container">
+                                © AngleNet 2018. All rights reserved.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+        </div>
     </div>
     )
 }
