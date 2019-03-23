@@ -82,7 +82,7 @@ export default class Home extends Component {
                             </div>
                             <div className="notification-info">
                               <h3>
-                                <a href=" messages.html" title="">
+                                <a href="messages.html" title="">
                                   Jassica William
                                 </a>
                               </h3>
@@ -134,7 +134,7 @@ export default class Home extends Component {
                       </div>
                     </li>
                     <li>
-                      <a href=" #" title="" className="not-box-open">
+                      <a href="#" title="" className="not-box-open">
                         <span>
                           <img src="images/icon7.png" alt="" />
                         </span>
@@ -235,7 +235,7 @@ export default class Home extends Component {
                       <li>
                         <div className="fgt-sec">
                           <input type="radio" name="cc" id="c5" />
-                          <label for="c5">
+                          <label htmlFor="c5">
                             {" "}
                             <span />{" "}
                           </label>
@@ -245,7 +245,7 @@ export default class Home extends Component {
                       <li>
                         <div className="fgt-sec">
                           <input type="radio" name="cc" id="c6" />
-                          <label for="c6">
+                          <label htmlFor="c6">
                             {" "}
                             <span />{" "}
                           </label>

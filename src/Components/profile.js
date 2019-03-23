@@ -4,11 +4,11 @@ export default class Profile extends Component {
   render() {
     return (
       <div>
-        <div class="wrapper">
+        <div className="wrapper">
           <header style={{ display: "none" }}>
-            <div class="container">
-              <div class="header-data">
-                <div class="logo">
+            <div className="container">
+              <div className="header-data">
+                <div className="logo">
                   <a href="index-2.html" title="">
                     <img
                       src="images/logoangelnet.png"
@@ -17,11 +17,11 @@ export default class Profile extends Component {
                     />
                   </a>
                 </div>
-                <div class="search-bar">
+                <div className="search-bar">
                   <form>
                     <input type="text" name="search" placeholder="Search..." />
                     <button type="submit">
-                      <i class="la la-search" />
+                      <i className="la la-search" />
                     </button>
                   </form>
                 </div>
@@ -66,25 +66,25 @@ export default class Profile extends Component {
                     </li>
 
                     <li>
-                      <a href="#" title="" class="not-box-open">
+                      <a href="#" title="" className="not-box-open">
                         <span>
                           <img src="images/icon6.png" alt="" />
                         </span>
                         Messages
                       </a>
-                      <div class="notification-box msg">
-                        <div class="nt-title">
+                      <div className="notification-box msg">
+                        <div className="nt-title">
                           <h4>Setting</h4>
                           <a href="#" title="">
                             Clear all
                           </a>
                         </div>
-                        <div class="nott-list">
-                          <div class="notfication-details">
-                            <div class="noty-user-img">
+                        <div className="nott-list">
+                          <div className="notfication-details">
+                            <div className="noty-user-img">
                               <img src="images/resources/ny-img1.png" alt="" />
                             </div>
-                            <div class="notification-info">
+                            <div className="notification-info">
                               <h3>
                                 <a href="messages.html" title="">
                                   Jassica William
@@ -97,11 +97,11 @@ export default class Profile extends Component {
                               <span>2 min ago</span>
                             </div>
                           </div>
-                          <div class="notfication-details">
-                            <div class="noty-user-img">
+                          <div className="notfication-details">
+                            <div className="noty-user-img">
                               <img src="images/resources/ny-img2.png" alt="" />
                             </div>
-                            <div class="notification-info">
+                            <div className="notification-info">
                               <h3>
                                 <a href="messages.html" title="">
                                   Jassica William
@@ -111,11 +111,11 @@ export default class Profile extends Component {
                               <span>2 min ago</span>
                             </div>
                           </div>
-                          <div class="notfication-details">
-                            <div class="noty-user-img">
+                          <div className="notfication-details">
+                            <div className="noty-user-img">
                               <img src="images/resources/ny-img3.png" alt="" />
                             </div>
-                            <div class="notification-info">
+                            <div className="notification-info">
                               <h3>
                                 <a href="messages.html" title="">
                                   Jassica William
@@ -129,7 +129,7 @@ export default class Profile extends Component {
                               <span>2 min ago</span>
                             </div>
                           </div>
-                          <div class="view-all-nots">
+                          <div className="view-all-nots">
                             <a href="messages.html" title="">
                               View All Messsages
                             </a>
@@ -138,25 +138,25 @@ export default class Profile extends Component {
                       </div>
                     </li>
                     <li>
-                      <a href="#" title="" class="not-box-open">
+                      <a href="#" title="" className="not-box-open">
                         <span>
                           <img src="images/icon7.png" alt="" />
                         </span>
                         Notification
                       </a>
-                      <div class="notification-box">
-                        <div class="nt-title">
+                      <div className="notification-box">
+                        <div className="nt-title">
                           <h4>Setting</h4>
                           <a href="#" title="">
                             Clear all
                           </a>
                         </div>
-                        <div class="nott-list">
-                          <div class="notfication-details">
-                            <div class="noty-user-img">
+                        <div className="nott-list">
+                          <div className="notfication-details">
+                            <div className="noty-user-img">
                               <img src="images/resources/ny-img1.png" alt="" />
                             </div>
-                            <div class="notification-info">
+                            <div className="notification-info">
                               <h3>
                                 <a href="#" title="">
                                   Jassica William
@@ -166,11 +166,11 @@ export default class Profile extends Component {
                               <span>2 min ago</span>
                             </div>
                           </div>
-                          <div class="notfication-details">
-                            <div class="noty-user-img">
+                          <div className="notfication-details">
+                            <div className="noty-user-img">
                               <img src="images/resources/ny-img2.png" alt="" />
                             </div>
-                            <div class="notification-info">
+                            <div className="notification-info">
                               <h3>
                                 <a href="#" title="">
                                   Jassica William
@@ -180,11 +180,11 @@ export default class Profile extends Component {
                               <span>2 min ago</span>
                             </div>
                           </div>
-                          <div class="notfication-details">
-                            <div class="noty-user-img">
+                          <div className="notfication-details">
+                            <div className="noty-user-img">
                               <img src="images/resources/ny-img3.png" alt="" />
                             </div>
-                            <div class="notification-info">
+                            <div className="notification-info">
                               <h3>
                                 <a href="#" title="">
                                   Jassica William
@@ -194,11 +194,11 @@ export default class Profile extends Component {
                               <span>2 min ago</span>
                             </div>
                           </div>
-                          <div class="notfication-details">
-                            <div class="noty-user-img">
+                          <div className="notfication-details">
+                            <div className="noty-user-img">
                               <img src="images/resources/ny-img2.png" alt="" />
                             </div>
-                            <div class="notification-info">
+                            <div className="notification-info">
                               <h3>
                                 <a href="#" title="">
                                   Jassica William
@@ -208,7 +208,7 @@ export default class Profile extends Component {
                               <span>2 min ago</span>
                             </div>
                           </div>
-                          <div class="view-all-nots">
+                          <div className="view-all-nots">
                             <a href="#" title="">
                               View All Notification
                             </a>
@@ -218,35 +218,35 @@ export default class Profile extends Component {
                     </li>
                   </ul>
                 </nav>
-                <div class="menu-btn">
+                <div className="menu-btn">
                   <a href="#" title="">
-                    <i class="fa fa-bars" />
+                    <i className="fa fa-bars" />
                   </a>
                 </div>
-                <div class="user-account">
-                  <div class="user-info">
+                <div className="user-account">
+                  <div className="user-info">
                     <img src="images/resources/user.png" alt="" />
                     <a href="#" title="">
                       John
                     </a>
-                    <i class="la la-sort-down" />
+                    <i className="la la-sort-down" />
                   </div>
-                  <div class="user-account-settingss">
+                  <div className="user-account-settingss">
                     <h3>Online Status</h3>
-                    <ul class="on-off-status">
+                    <ul className="on-off-status">
                       <li>
-                        <div class="fgt-sec">
+                        <div className="fgt-sec">
                           <input type="radio" name="cc" id="c5" />
-                          <label for="c5">
+                          <label htmlFor="c5">
                             <span />
                           </label>
                           <small>Online</small>
                         </div>
                       </li>
                       <li>
-                        <div class="fgt-sec">
+                        <div className="fgt-sec">
                           <input type="radio" name="cc" id="c6" />
-                          <label for="c6">
+                          <label htmlFor="c6">
                             <span />
                           </label>
                           <small>Offline</small>
@@ -254,14 +254,14 @@ export default class Profile extends Component {
                       </li>
                     </ul>
                     <h3>Custom Status</h3>
-                    <div class="search_form">
+                    <div className="search_form">
                       <form>
                         <input type="text" name="search" />
                         <button type="submit">Ok</button>
                       </form>
                     </div>
                     <h3>Setting</h3>
-                    <ul class="us-links">
+                    <ul className="us-links">
                       <li>
                         <a href="profile-account-setting.html" title="">
                           Account Setting
@@ -283,7 +283,7 @@ export default class Profile extends Component {
                         </a>
                       </li>
                     </ul>
-                    <h3 class="tc">
+                    <h3 className="tc">
                       <a href="#" title="">
                         Logout
                       </a>
@@ -294,364 +294,364 @@ export default class Profile extends Component {
             </div>
           </header>
 
-          <section class="companies-info">
-            <div class="container">
-              <div class="company-title">
+          <section className="companies-info">
+            <div className="container">
+              <div className="company-title">
                 <h3>All Companies</h3>
               </div>
-              <div class="companies-list">
-                <div class="row">
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <div class="company_profile_info">
-                      <div class="company-up-info">
+              <div className="companies-list">
+                <div className="row">
+                  <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div className="company_profile_info">
+                      <div className="company-up-info">
                         <img src="images/resources/pf-icon1.png" alt="" />
                         <h3>John Doe</h3>
                         <h4>Graphic Designer</h4>
                         <ul>
                           <li>
-                            <a href="#" title="" class="follow">
+                            <a href="#" title="" className="follow">
                               Follow
                             </a>
                           </li>
                           <li>
-                            <a href="#" title="" class="message-us">
-                              <i class="fa fa-envelope" />
+                            <a href="#" title="" className="message-us">
+                              <i className="fa fa-envelope" />
                             </a>
                           </li>
                           <li>
-                            <a href="#" title="" class="hire-us">
+                            <a href="#" title="" className="hire-us">
                               Hire
                             </a>
                           </li>
                         </ul>
                       </div>
-                      <a href="#" title="" class="view-more-pro">
+                      <a href="#" title="" className="view-more-pro">
                         View Profile
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <div class="company_profile_info">
-                      <div class="company-up-info">
+                  <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div className="company_profile_info">
+                      <div className="company-up-info">
                         <img src="images/resources/pf-icon2.png" alt="" />
                         <h3>John Doe</h3>
                         <h4>Graphic Designer</h4>
                         <ul>
                           <li>
-                            <a href="#" title="" class="follow">
+                            <a href="#" title="" className="follow">
                               Follow
                             </a>
                           </li>
                           <li>
-                            <a href="#" title="" class="message-us">
-                              <i class="fa fa-envelope" />
+                            <a href="#" title="" className="message-us">
+                              <i className="fa fa-envelope" />
                             </a>
                           </li>
                           <li>
-                            <a href="#" title="" class="hire-us">
+                            <a href="#" title="" className="hire-us">
                               Hire
                             </a>
                           </li>
                         </ul>
                       </div>
-                      <a href="#" title="" class="view-more-pro">
+                      <a href="#" title="" className="view-more-pro">
                         View Profile
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <div class="company_profile_info">
-                      <div class="company-up-info">
+                  <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div className="company_profile_info">
+                      <div className="company-up-info">
                         <img src="images/resources/pf-icon3.png" alt="" />
                         <h3>John Doe</h3>
                         <h4>Graphic Designer</h4>
                         <ul>
                           <li>
-                            <a href="#" title="" class="follow">
+                            <a href="#" title="" className="follow">
                               Follow
                             </a>
                           </li>
                           <li>
-                            <a href="#" title="" class="message-us">
-                              <i class="fa fa-envelope" />
+                            <a href="#" title="" className="message-us">
+                              <i className="fa fa-envelope" />
                             </a>
                           </li>
                           <li>
-                            <a href="#" title="" class="hire-us">
+                            <a href="#" title="" className="hire-us">
                               Hire
                             </a>
                           </li>
                         </ul>
                       </div>
-                      <a href="#" title="" class="view-more-pro">
+                      <a href="#" title="" className="view-more-pro">
                         View Profile
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <div class="company_profile_info">
-                      <div class="company-up-info">
+                  <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div className="company_profile_info">
+                      <div className="company-up-info">
                         <img src="images/resources/pf-icon4.png" alt="" />
                         <h3>John Doe</h3>
                         <h4>Graphic Designer</h4>
                         <ul>
                           <li>
-                            <a href="#" title="" class="follow">
+                            <a href="#" title="" className="follow">
                               Follow
                             </a>
                           </li>
                           <li>
-                            <a href="#" title="" class="message-us">
-                              <i class="fa fa-envelope" />
+                            <a href="#" title="" className="message-us">
+                              <i className="fa fa-envelope" />
                             </a>
                           </li>
                           <li>
-                            <a href="#" title="" class="hire-us">
+                            <a href="#" title="" className="hire-us">
                               Hire
                             </a>
                           </li>
                         </ul>
                       </div>
-                      <a href="#" title="" class="view-more-pro">
+                      <a href="#" title="" className="view-more-pro">
                         View Profile
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <div class="company_profile_info">
-                      <div class="company-up-info">
+                  <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div className="company_profile_info">
+                      <div className="company-up-info">
                         <img src="images/resources/pf-icon5.png" alt="" />
                         <h3>John Doe</h3>
                         <h4>Graphic Designer</h4>
                         <ul>
                           <li>
-                            <a href="#" title="" class="follow">
+                            <a href="#" title="" className="follow">
                               Follow
                             </a>
                           </li>
                           <li>
-                            <a href="#" title="" class="message-us">
-                              <i class="fa fa-envelope" />
+                            <a href="#" title="" className="message-us">
+                              <i className="fa fa-envelope" />
                             </a>
                           </li>
                           <li>
-                            <a href="#" title="" class="hire-us">
+                            <a href="#" title="" className="hire-us">
                               Hire
                             </a>
                           </li>
                         </ul>
                       </div>
-                      <a href="#" title="" class="view-more-pro">
+                      <a href="#" title="" className="view-more-pro">
                         View Profile
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <div class="company_profile_info">
-                      <div class="company-up-info">
+                  <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div className="company_profile_info">
+                      <div className="company-up-info">
                         <img src="images/resources/pf-icon6.png" alt="" />
                         <h3>John Doe</h3>
                         <h4>Graphic Designer</h4>
                         <ul>
                           <li>
-                            <a href="#" title="" class="follow">
+                            <a href="#" title="" className="follow">
                               Follow
                             </a>
                           </li>
                           <li>
-                            <a href="#" title="" class="message-us">
-                              <i class="fa fa-envelope" />
+                            <a href="#" title="" className="message-us">
+                              <i className="fa fa-envelope" />
                             </a>
                           </li>
                           <li>
-                            <a href="#" title="" class="hire-us">
+                            <a href="#" title="" className="hire-us">
                               Hire
                             </a>
                           </li>
                         </ul>
                       </div>
-                      <a href="#" title="" class="view-more-pro">
+                      <a href="#" title="" className="view-more-pro">
                         View Profile
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <div class="company_profile_info">
-                      <div class="company-up-info">
+                  <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div className="company_profile_info">
+                      <div className="company-up-info">
                         <img src="images/resources/pf-icon7.png" alt="" />
                         <h3>John Doe</h3>
                         <h4>Graphic Designer</h4>
                         <ul>
                           <li>
-                            <a href="#" title="" class="follow">
+                            <a href="#" title="" className="follow">
                               Follow
                             </a>
                           </li>
                           <li>
-                            <a href="#" title="" class="message-us">
-                              <i class="fa fa-envelope" />
+                            <a href="#" title="" className="message-us">
+                              <i className="fa fa-envelope" />
                             </a>
                           </li>
                           <li>
-                            <a href="#" title="" class="hire-us">
+                            <a href="#" title="" className="hire-us">
                               Hire
                             </a>
                           </li>
                         </ul>
                       </div>
-                      <a href="#" title="" class="view-more-pro">
+                      <a href="#" title="" className="view-more-pro">
                         View Profile
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <div class="company_profile_info">
-                      <div class="company-up-info">
+                  <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div className="company_profile_info">
+                      <div className="company-up-info">
                         <img src="images/resources/pf-icon8.png" alt="" />
                         <h3>John Doe</h3>
                         <h4>Graphic Designer</h4>
                         <ul>
                           <li>
-                            <a href="#" title="" class="follow">
+                            <a href="#" title="" className="follow">
                               Follow
                             </a>
                           </li>
                           <li>
-                            <a href="#" title="" class="message-us">
-                              <i class="fa fa-envelope" />
+                            <a href="#" title="" className="message-us">
+                              <i className="fa fa-envelope" />
                             </a>
                           </li>
                           <li>
-                            <a href="#" title="" class="hire-us">
+                            <a href="#" title="" className="hire-us">
                               Hire
                             </a>
                           </li>
                         </ul>
                       </div>
-                      <a href="#" title="" class="view-more-pro">
+                      <a href="#" title="" className="view-more-pro">
                         View Profile
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <div class="company_profile_info">
-                      <div class="company-up-info">
+                  <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div className="company_profile_info">
+                      <div className="company-up-info">
                         <img src="images/resources/pf-icon9.png" alt="" />
                         <h3>John Doe</h3>
                         <h4>Graphic Designer</h4>
                         <ul>
                           <li>
-                            <a href="#" title="" class="follow">
+                            <a href="#" title="" className="follow">
                               Follow
                             </a>
                           </li>
                           <li>
-                            <a href="#" title="" class="message-us">
-                              <i class="fa fa-envelope" />
+                            <a href="#" title="" className="message-us">
+                              <i className="fa fa-envelope" />
                             </a>
                           </li>
                           <li>
-                            <a href="#" title="" class="hire-us">
+                            <a href="#" title="" className="hire-us">
                               Hire
                             </a>
                           </li>
                         </ul>
                       </div>
-                      <a href="#" title="" class="view-more-pro">
+                      <a href="#" title="" className="view-more-pro">
                         View Profile
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <div class="company_profile_info">
-                      <div class="company-up-info">
+                  <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div className="company_profile_info">
+                      <div className="company-up-info">
                         <img src="images/resources/pf-icon10.png" alt="" />
                         <h3>John Doe</h3>
                         <h4>Graphic Designer</h4>
                         <ul>
                           <li>
-                            <a href="#" title="" class="follow">
+                            <a href="#" title="" className="follow">
                               Follow
                             </a>
                           </li>
                           <li>
-                            <a href="#" title="" class="message-us">
-                              <i class="fa fa-envelope" />
+                            <a href="#" title="" className="message-us">
+                              <i className="fa fa-envelope" />
                             </a>
                           </li>
                           <li>
-                            <a href="#" title="" class="hire-us">
+                            <a href="#" title="" className="hire-us">
                               Hire
                             </a>
                           </li>
                         </ul>
                       </div>
-                      <a href="#" title="" class="view-more-pro">
+                      <a href="#" title="" className="view-more-pro">
                         View Profile
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <div class="company_profile_info">
-                      <div class="company-up-info">
+                  <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div className="company_profile_info">
+                      <div className="company-up-info">
                         <img src="images/resources/pf-icon11.png" alt="" />
                         <h3>John Doe</h3>
                         <h4>Graphic Designer</h4>
                         <ul>
                           <li>
-                            <a href="#" title="" class="follow">
+                            <a href="#" title="" className="follow">
                               Follow
                             </a>
                           </li>
                           <li>
-                            <a href="#" title="" class="message-us">
-                              <i class="fa fa-envelope" />
+                            <a href="#" title="" className="message-us">
+                              <i className="fa fa-envelope" />
                             </a>
                           </li>
                           <li>
-                            <a href="#" title="" class="hire-us">
+                            <a href="#" title="" className="hire-us">
                               Hire
                             </a>
                           </li>
                         </ul>
                       </div>
-                      <a href="#" title="" class="view-more-pro">
+                      <a href="#" title="" className="view-more-pro">
                         View Profile
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <div class="company_profile_info">
-                      <div class="company-up-info">
+                  <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div className="company_profile_info">
+                      <div className="company-up-info">
                         <img src="images/resources/pf-icon12.png" alt="" />
                         <h3>John Doe</h3>
                         <h4>Graphic Designer</h4>
                         <ul>
                           <li>
-                            <a href="#" title="" class="follow">
+                            <a href="#" title="" className="follow">
                               Follow
                             </a>
                           </li>
                           <li>
-                            <a href="#" title="" class="message-us">
-                              <i class="fa fa-envelope" />
+                            <a href="#" title="" className="message-us">
+                              <i className="fa fa-envelope" />
                             </a>
                           </li>
                           <li>
-                            <a href="#" title="" class="hire-us">
+                            <a href="#" title="" className="hire-us">
                               Hire
                             </a>
                           </li>
                         </ul>
                       </div>
-                      <a href="#" title="" class="view-more-pro">
+                      <a href="#" title="" className="view-more-pro">
                         View Profile
                       </a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="process-comm">
+              <div className="process-comm">
                 <a href="#" title="">
                   <img src="images/process-icon.png" alt="" />
                 </a>

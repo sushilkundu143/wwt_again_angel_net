@@ -3,15 +3,15 @@ import Suggestions from "./SuggestionMostViewed";
 export default class MostViewedPeople extends Component {
   render() {
     return (
-      <div class="widget suggestions full-width">
-        <div class="sd-title">
+      <div className="widget suggestions full-width">
+        <div className="sd-title">
           <h3>Most Viewed People</h3>
-          <i class="la la-ellipsis-v" />
+          <i className="la la-ellipsis-v" />
         </div>
         <Suggestions />
         <Suggestions />
-        <div class="suggestions-list">
-          <div class="view-more">
+        <div className="suggestions-list">
+          <div className="view-more">
             <a href="#" title="">
               View More
             </a>

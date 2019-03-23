@@ -33,21 +33,21 @@ export default class SinglePost extends Component {
 
   render() {
     return (
-      <div class="post-bar">
-        <div class="post_topbar" style={{ borderTop: "4px solid #0b3253" }}>
-          <div class="usy-dt">
+      <div className="post-bar">
+        <div className="post_topbar" style={{ borderTop: "4px solid #0b3253" }}>
+          <div className="usy-dt">
             <img src="images/resources/us-pic.png" alt="" />
-            <div class="usy-name">
+            <div className="usy-name">
               <h3>John Doe</h3>
               <span>
                 <img src="images/clock.png" alt="" />3 min ago
               </span>
             </div>
           </div>
-          <div class="ed-opts">
-            <div class="dropdown">
+          <div className="ed-opts">
+            <div className="dropdown">
               <MoreIcon />
-              <div class="dropdown-content">
+              <div className="dropdown-content">
                 <List style={{ width: 100 }}>
                   <ListItem>
                     <a href="#">
@@ -70,7 +70,7 @@ export default class SinglePost extends Component {
           </div>
         </div>
 
-        <div class="job_descp">
+        <div className="job_descp">
           <img
             width="100%"
             src="https://s3-us-west-2.amazonaws.com/jumpermedia.co/uploads/2016/04/Screen-Shot-2017-02-01-at-11.44.20-AM-768x582.png"
@@ -83,7 +83,7 @@ export default class SinglePost extends Component {
           </p>
         </div>
         <div
-          class="job-status-bar"
+          className="job-status-bar"
           style={{
             backgroundColor: "#0b3253",
             display: "flex",
@@ -95,18 +95,18 @@ export default class SinglePost extends Component {
           }}
         >
           <a href="#" style={{ paddingBottom: 5 }}>
-            <i class="la la-heart" style={{ padding: 5 }} />
+            <i className="la la-heart" style={{ padding: 5 }} />
           </a>
           <a
             href="#"
             title=""
-            class="com"
+            className="com"
             style={{ paddingTop: 5, paddingBottom: 5 }}
           >
             <img src="images/com.png" alt="" style={{ padding: 5 }} />
           </a>
           <a style={{ float: "right", position: "relative", paddingBottom: 5 }}>
-            <i class="la la-eye" style={{ padding: 5 }} />
+            <i className="la la-eye" style={{ padding: 5 }} />
             Views 50
           </a>
         </div>

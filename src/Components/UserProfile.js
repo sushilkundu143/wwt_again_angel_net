@@ -66,14 +66,14 @@ componentDidMount(){
 
   render() {
     return (
-      <div class="user-data full-width">
-        <div class="user-profile">
-          <div class="username-dt">
-            <div class="usr-pic">
+      <div className="user-data full-width">
+        <div className="user-profile">
+          <div className="username-dt">
+            <div className="usr-pic">
               <img src="images/resources/user-pic.png" alt="" />
             </div>
           </div>
-          <div class="user-specs">
+          <div className="user-specs">
             <h3>{this.state.UserProfile.name}</h3>
             <span>{this.state.UserProfile.description}</span>
           </div>
