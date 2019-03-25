@@ -407,7 +407,7 @@ logout(){
             <div className={classes.sectionDesktop}>
               <Tooltip title="Home">
                 <Link to="/" className="menu-item">
-                  <IconButton color="inherit">
+                  <IconButton color="inherit" style={{borderRadius: 0}}>
                     <div className="menu-item">
                       <Home style={{ color: "#fff" }} />
                       <Typography style={{ color: "#fff" }}>Home</Typography>
@@ -415,7 +415,7 @@ logout(){
                   </IconButton>
                 </Link>
               </Tooltip>
-              <Tooltip title="Profile">
+              <Tooltip title="Profile" style={{borderRadius: 0}}>
                 <Link to="/profile" className="menu-item">
                   <IconButton color="inherit">
                     <div className="menu-item">
@@ -425,7 +425,7 @@ logout(){
                   </IconButton>
                 </Link>
               </Tooltip>
-              <Tooltip title="Connections">
+              <Tooltip title="Connections" style={{borderRadius: 0}}>
                 <Link to="/companies" className="menu-item">
                   <IconButton color="inherit">
                     <div className="menu-item">
@@ -437,7 +437,7 @@ logout(){
                   </IconButton>
                 </Link>
               </Tooltip>
-              <Tooltip title="Messages">
+              <Tooltip title="Messages" style={{borderRadius: 0}}>
                 <Link to="/messages">
                   <IconButton color="inherit">
                     <div className="menu-item">
@@ -451,7 +451,7 @@ logout(){
                   </IconButton>
                 </Link>
               </Tooltip>
-              <Tooltip title="Notifications">
+              <Tooltip title="Notifications" style={{borderRadius: 0}}>
                 <IconButton color="inherit" onClick={this.handleNotificationsOpen}>
                   <div className="menu-item">
                     <Badge badgeContent={11} color="secondary">
@@ -463,7 +463,7 @@ logout(){
                   </div>
                 </IconButton>
               </Tooltip>
-              <Tooltip title="More">
+              <Tooltip title="More" style={{borderRadius: 0}}>
                 <IconButton
                   color="inherit"
                   onClick={this.handleProfileMenuOpen}
@@ -474,7 +474,7 @@ logout(){
                   </div>
                 </IconButton>
               </Tooltip>
-              <Tooltip title="logout">
+              <Tooltip title="logout" style={{borderRadius: 0}}>
                <IconButton color="inherit" onClick={this.logout}>
                     <div className="menu-item">
                       <AccountCircle />
