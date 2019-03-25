@@ -475,7 +475,7 @@ logout(){
                 </IconButton>
               </Tooltip>
               <Tooltip title="logout">
-               <IconButton color="inherit">
+               <IconButton color="inherit" onClick={this.logout}>
                     <div className="menu-item">
                       <AccountCircle />
                       <Typography style={{ color: "#fff" }}>Hi, AngelNet</Typography>
