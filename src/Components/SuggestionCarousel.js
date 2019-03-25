@@ -4,6 +4,7 @@ export default class SuggestionCarousel extends Component {
   render() {
     return (
       <div>
+        {/*
         <div className="top-profiles">
           <div className="pf-hd">
             <h3>Suggestions</h3>
@@ -37,6 +38,7 @@ export default class SuggestionCarousel extends Component {
             </div>
           </div>
         </div>
+        */}
       </div>
     );
   }

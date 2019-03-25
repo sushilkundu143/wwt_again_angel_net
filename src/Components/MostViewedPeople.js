@@ -6,7 +6,6 @@ export default class MostViewedPeople extends Component {
       <div className="widget suggestions full-width">
         <div className="sd-title">
           <h3>Most Viewed People</h3>
-          <i className="la la-ellipsis-v" />
         </div>
         <Suggestions />
         <Suggestions />

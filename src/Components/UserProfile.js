@@ -79,7 +79,7 @@ componentDidMount(){
           </div>
         </div>
 
-        <Container className="user-fw-status" style={{ padding: 10 }}>
+        <div className="user-fw-status" style={{ padding: 15 }}>
           <Row>
             <Col
               style={{
@@ -158,7 +158,7 @@ componentDidMount(){
             </a>
           </Row>
 
-          <Row style={{ paddingTop: 5, paddingBottom: 5 }}>
+          <Row className="center-items" style={{paddingTop: 5}}>
             <IconButton>
               <a href={this.state.UserProfile.linkedin}>
               <svg
@@ -221,7 +221,7 @@ componentDidMount(){
               </a>
             </IconButton>
           </Row>
-        </Container>
+        </div>
       </div>
     );
   }

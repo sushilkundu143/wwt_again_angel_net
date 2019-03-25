@@ -381,7 +381,7 @@ export default class MyProfile extends Component {
                             </li>
                           </ul>
                         </div>
-
+                        {/*
                         <div className="suggestions full-width">
                           <div className="sd-title">
                             <h3>Suggestions</h3>
@@ -456,6 +456,7 @@ export default class MyProfile extends Component {
                             </div>
                           </div>
                         </div>
+                      */}
                       </div>
                     </div>
                     <div className="col-lg-6">

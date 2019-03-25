@@ -32,7 +32,6 @@ export default class Home extends Component {
                     </button>
                   </form>
                 </div>
-
                 <nav>
                   <ul>
                     <li>

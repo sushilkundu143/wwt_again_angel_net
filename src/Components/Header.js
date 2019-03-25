@@ -184,20 +184,6 @@ logout(){
           <p style={{ marginLeft: 10 }}>Analysis</p>
           </Link>
         </MenuItem>
-        {/*<MenuItem onClick={this.handleMenuClose}>
-        <Link to='/blog'>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <circle cx="6.18" cy="17.82" r="2.18" />
-            <path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z" />
-          </svg>
-          <p style={{ marginLeft: 10 }}>Blog</p>
-          </Link>
-    </MenuItem>*/}
         <MenuItem onClick={this.handleMenuClose}>
         <Link to='/events' style={{display:'flex',flexDirection:'row',width:'100%'}}>
                   <svg
@@ -224,21 +210,6 @@ logout(){
           <p style={{ marginLeft: 10 }}>Jobs</p>
           </Link>
         </MenuItem>
-        {/* 
-        <MenuItem onClick={this.handleMenuClose}>
-        <Link to='/blog'> 
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path d="M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z" />
-          </svg>
-
-          <p style={{ marginLeft: 10 }}>News</p>
-          </Link>
-        </MenuItem>*/}
         <MenuItem onClick={this.handleMenuClose}>
          <Link to='/partnership' style={{display:'flex',flexDirection:'row',width:'100%'}}>
           <svg
@@ -252,54 +223,6 @@ logout(){
           <p style={{ marginLeft: 10 }}>PartnerShip</p>
           </Link>
         </MenuItem>
-        {/*
-        <MenuItem onClick={this.handleMenuClose}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" />
-          </svg>
-
-          <p style={{ marginLeft: 10 }}>Launch</p>
-        </MenuItem>
-        <MenuItem onClick={this.handleMenuClose}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="18"
-            height="18"
-            viewBox="0 0 18 18"
-          >
-            <path d="M16 1H2c-.55 0-1 .45-1 1v14c0 .55.45 1 1 1h14c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1zM3.5 13l2.75-3.54 1.96 2.36 2.75-3.54L14.5 13h-11z" />
-          </svg>
-
-          <p style={{ marginLeft: 10 }}>Gallery</p>
-        </MenuItem>
-        <MenuItem onClick={this.handleMenuClose}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path d="M23 12l-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68L23 12zm-10 5h-2v-2h2v2zm0-4h-2V7h2v6z" />
-          </svg>
-          <p style={{ marginLeft: 10 }}>Adverstisement</p>
-        </MenuItem>
-        <MenuItem onClick={this.handleMenuClose}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z" />
-          </svg>
-
-          <p style={{ marginLeft: 10 }}>AngelNet TV</p>
-        </MenuItem>*/}
         <MenuItem onClick={this.handleMenuClose}>
         <Link to='/trending' style={{display:'flex',flexDirection:'row',width:'100%'}} >  
           <svg
@@ -345,34 +268,15 @@ logout(){
         onClose={this.handleMobileMenuClose}
       >
         <MenuItem>
-          <Link
-            to="/"
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-              justifyContent: "center",
-              width:'100%'
-            }}
-          >
+          <Link to="/" className="menu-item">
             <IconButton color="inherit">
               <Home />
             </IconButton>
-
             <p>Home</p>
           </Link>
         </MenuItem>
         <MenuItem onClick={this.handleProfileMenuOpen}>
-          <Link
-            to="/profile"
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-              justifyContent: "center",
-              width:'100%'
-            }}
-          >
+          <Link className="menu-item">
             <IconButton color="inherit">
               <AccountCircle />
             </IconButton>
@@ -380,16 +284,7 @@ logout(){
           </Link>
         </MenuItem>
         <MenuItem>
-          <Link
-            to="/companies"
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-              justifyContent: "center",
-              width:'100%'
-            }}
-          >
+          <Link to="/companies" className="menu-item">
             <IconButton color="inherit">
               <Group />
             </IconButton>
@@ -443,21 +338,11 @@ logout(){
         ))}
         <MenuItem
           onClick={this.handleNotificationsClose}
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center"
-          }}
+          className="menu-item"
         >
           <Link
             to="/notifications"
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center"
-            }}
+            className="menu-item"
           >
             View More
           </Link>
@@ -472,7 +357,8 @@ logout(){
             backgroundColor: "#0b3253"
           }}
         >
-          <Toolbar>
+        <div className="container">
+          <Toolbar className="row pl-0 pr-0">
             <Hidden mdUp>
               <Tooltip title="More">
                 <IconButton
@@ -495,7 +381,6 @@ logout(){
               <p
                 style={{
                   color: "#3fa6e6",
-                  
                   fontSize: 30
                 }}
               >
@@ -516,92 +401,35 @@ logout(){
                 />
               </div>
               <a href="https://www.google.com">
-                <Typography>
-                  <p style={{ color: "#fff" }}>Advanced Search</p>
-                </Typography>
               </a>
             </Hidden>
             <div className={classes.grow} />
             <div className={classes.sectionDesktop}>
               <Tooltip title="Home">
-                <Link
-                  to="/"
-                  style={{
-                    display: "flex",
-                    flexDirection: "row",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    color: "#fff",
-                    width:'100%'
-                  }}
-                >
+                <Link to="/" className="menu-item">
                   <IconButton color="inherit">
-                    <div
-                      style={{
-                        display: "flex",
-                        flexDirection: "column",
-                        color: "#fff",
-                        alignItems: "center",
-                        justifyContent: "center"
-                      }}
-                    >
-                      <Home />
+                    <div className="menu-item">
+                      <Home style={{ color: "#fff" }} />
                       <Typography style={{ color: "#fff" }}>Home</Typography>
                     </div>
                   </IconButton>
                 </Link>
               </Tooltip>
               <Tooltip title="Profile">
-                <Link
-                  to="/profile"
-                  style={{
-                    display: "flex",
-                    flexDirection: "row",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    color: "#fff",
-                    width:'100%'
-                  }}
-                >
+                <Link to="/profile" className="menu-item">
                   <IconButton color="inherit">
-                    <div
-                      style={{
-                        display: "flex",
-                        flexDirection: "column",
-                        color: "#fff",
-                        alignItems: "center",
-                        justifyContent: "center"
-                      }}
-                    >
-                      <AccountCircle />
+                    <div className="menu-item">
+                      <AccountCircle style={{ color: "#fff" }} />
                       <Typography style={{ color: "#fff" }}>Profile</Typography>
                     </div>
                   </IconButton>
                 </Link>
               </Tooltip>
               <Tooltip title="Connections">
-                <Link
-                  to="/companies"
-                  style={{
-                    display: "flex",
-                    flexDirection: "row",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    color: "#fff",
-                    width:'100%'
-                  }}
-                >
+                <Link to="/companies" className="menu-item">
                   <IconButton color="inherit">
-                    <div
-                      style={{
-                        display: "flex",
-                        flexDirection: "column",
-                        color: "#fff",
-                        alignItems: "center",
-                        justifyContent: "center"
-                      }}
-                    >
-                      <Group />
+                    <div className="menu-item">
+                      <Group style={{ color: "#fff" }} />
                       <Typography style={{ color: "#fff" }}>
                         Connections
                       </Typography>
@@ -612,42 +440,22 @@ logout(){
               <Tooltip title="Messages">
                 <Link to="/messages">
                   <IconButton color="inherit">
+                    <div className="menu-item">
                     <Badge badgeContent={4} color="secondary">
-                      <div
-                        style={{
-                          display: "flex",
-                          flexDirection: "column",
-                          color: "#fff",
-                          alignItems: "center",
-                          justifyContent: "center",
-                          width:'100%'
-                        }}
-                      >
-                        <MailIcon />
-                        <Typography style={{ color: "#fff" }}>
-                          Messages
-                        </Typography>
-                      </div>
+                      <MailIcon style={{ color: "#fff" }} />
                     </Badge>
+                    <Typography style={{ color: "#fff" }}>
+                      Messages
+                    </Typography>
+                  </div>
                   </IconButton>
                 </Link>
               </Tooltip>
               <Tooltip title="Notifications">
-                <IconButton
-                  color="inherit"
-                  onClick={this.handleNotificationsOpen}
-                >
-                  <div
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      color: "#fff",
-                      alignItems: "center",
-                      justifyContent: "center"
-                    }}
-                  >
+                <IconButton color="inherit" onClick={this.handleNotificationsOpen}>
+                  <div className="menu-item">
                     <Badge badgeContent={11} color="secondary">
-                      <NotificationsIcon />
+                      <NotificationsIcon style={{ color: "#fff" }} />
                     </Badge>
                     <Typography style={{ color: "#fff" }}>
                       Notifications
@@ -660,88 +468,28 @@ logout(){
                   color="inherit"
                   onClick={this.handleProfileMenuOpen}
                 >
-                  <div
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      color: "#fff",
-                      alignItems: "center",
-                      justifyContent: "center"
-                    }}
-                  >
+                  <div className="menu-item">
                     <NotificationsIcon />
                     <Typography style={{ color: "#fff" }}>More</Typography>
                   </div>
                 </IconButton>
               </Tooltip>
               <Tooltip title="logout">
-                <IconButton color="inherit">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    onClick={this.logout}
-                  >
-                    <path
-                      style={{ fill: "#fff" }}
-                      d="M10.09 15.59L11.5 17l5-5-5-5-1.41 1.41L12.67 11H3v2h9.67l-2.58 2.59zM19 3H5c-1.11 0-2 .9-2 2v4h2V5h14v14H5v-4H3v4c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                    />
-                  </svg>
-                </IconButton>
+               <IconButton color="inherit">
+                    <div className="menu-item">
+                      <AccountCircle />
+                      <Typography style={{ color: "#fff" }}>Hi, AngelNet</Typography>
+                    </div>
+                  </IconButton>
               </Tooltip>
-
-              {/*<IconButton color="inherit">
-                 <p>Home</p>
-                </IconButton>
-                <IconButton color="inherit">
-                 <p>Profile</p>
-                </IconButton>
-              <IconButton color="inherit">
-                <p>Connections</p>
-              </IconButton>
-              <IconButton color="inherit">
-                <Badge badgeContent={4} color="secondary">
-                  <MailIcon />
-                </Badge>
-              </IconButton>
-              <IconButton color="inherit">
-                <Badge badgeContent={17} color="secondary">
-                  <NotificationsIcon />
-                </Badge>
-              </IconButton>
-              {/*<IconButton
-                aria-owns={isMenuOpen ? "material-appbar" : undefined}
-                aria-haspopup="true"
-                onClick={this.handleProfileMenuOpen}
-                color="inherit"
-              >
-                <AccountCircle />
-              </IconButton>
-              * /}
-              <IconButton color="inherit">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  
-                >
-                  <path d="M10.09 15.59L11.5 17l5-5-5-5-1.41 1.41L12.67 11H3v2h9.67l-2.58 2.59zM19 3H5c-1.11 0-2 .9-2 2v4h2V5h14v14H5v-4H3v4c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z" />
-
-                </svg>
-              </IconButton>*/}
             </div>
             <div className={classes.sectionMobile}>
-              <IconButton
-                aria-haspopup="true"
-                onClick={this.handleMobileMenuOpen}
-                color="inherit"
-              >
+              <IconButton aria-haspopup="true" onClick={this.handleMobileMenuOpen} color="inherit">
                 <MoreIcon />
               </IconButton>
             </div>
           </Toolbar>
+          </div>
         </AppBar>
         {renderMenu}
         {renderMobileMenu}

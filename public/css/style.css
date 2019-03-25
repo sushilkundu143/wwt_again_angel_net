@@ -215,6 +215,7 @@ p {
   font-size: 14px;
   line-height: 26px;
   color: #666666;
+  font-family: "Lato" !important;
 }
 
 /* ================ CROSS BROWSER COMPATABILITY =============== */

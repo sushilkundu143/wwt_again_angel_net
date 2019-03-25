@@ -245,7 +245,7 @@ render(){
             <div className="col-sm-4 col-lg-4">
                 <div className="shadow">
                 <div style={{backgroundColor:'#f6f8fa', textAlign:'center' , width:'100%', padding:'30px 10px', borderBottom:'1px solid #c7c7c7'}}>
-                    <h2 className="h2">Your network is your net worth</h2>
+                    <h2 className="h2">Your network is your net worth Sushil</h2>
                     <p style={{marginTop:15}}>Join Global Network - its Free</p>
                 </div>
             <form className="p-3">
