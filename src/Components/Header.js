@@ -415,9 +415,9 @@ logout(){
                   </IconButton>
                 </Link>
               </Tooltip>
-              <Tooltip title="Profile" style={{borderRadius: 0}}>
+              <Tooltip title="Profile">
                 <Link to="/profile" className="menu-item">
-                  <IconButton color="inherit">
+                  <IconButton color="inherit" style={{borderRadius: 0}}>
                     <div className="menu-item">
                       <AccountCircle style={{ color: "#fff" }} />
                       <Typography style={{ color: "#fff" }}>Profile</Typography>
@@ -425,9 +425,9 @@ logout(){
                   </IconButton>
                 </Link>
               </Tooltip>
-              <Tooltip title="Connections" style={{borderRadius: 0}}>
+              <Tooltip title="Connections">
                 <Link to="/companies" className="menu-item">
-                  <IconButton color="inherit">
+                  <IconButton color="inherit" style={{borderRadius: 0}}>
                     <div className="menu-item">
                       <Group style={{ color: "#fff" }} />
                       <Typography style={{ color: "#fff" }}>
@@ -437,9 +437,9 @@ logout(){
                   </IconButton>
                 </Link>
               </Tooltip>
-              <Tooltip title="Messages" style={{borderRadius: 0}}>
+              <Tooltip title="Messages">
                 <Link to="/messages">
-                  <IconButton color="inherit">
+                  <IconButton color="inherit" style={{borderRadius: 0}}>
                     <div className="menu-item">
                     <Badge badgeContent={4} color="secondary">
                       <MailIcon style={{ color: "#fff" }} />
@@ -451,8 +451,8 @@ logout(){
                   </IconButton>
                 </Link>
               </Tooltip>
-              <Tooltip title="Notifications" style={{borderRadius: 0}}>
-                <IconButton color="inherit" onClick={this.handleNotificationsOpen}>
+              <Tooltip title="Notifications">
+                <IconButton color="inherit" onClick={this.handleNotificationsOpen} style={{borderRadius: 0}}>
                   <div className="menu-item">
                     <Badge badgeContent={11} color="secondary">
                       <NotificationsIcon style={{ color: "#fff" }} />
@@ -463,11 +463,8 @@ logout(){
                   </div>
                 </IconButton>
               </Tooltip>
-              <Tooltip title="More" style={{borderRadius: 0}}>
-                <IconButton
-                  color="inherit"
-                  onClick={this.handleProfileMenuOpen}
-                >
+              <Tooltip title="More">
+                <IconButton color="inherit" onClick={this.handleProfileMenuOpen} style={{borderRadius: 0}}>
                   <div className="menu-item">
                     <NotificationsIcon />
                     <Typography style={{ color: "#fff" }}>More</Typography>
