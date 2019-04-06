@@ -20,12 +20,12 @@ export default class Connections extends Component {
                 </div>
 
                 <div className="search-bar">
-                  <form>
+                  <htmlForm>
                     <input type="text" name="search" placeholder="Search..." />
                     <button type="submit">
                       <i className="la la-search" />
                     </button>
-                  </form>
+                  </htmlForm>
                 </div>
 
                 <nav>
@@ -230,7 +230,7 @@ export default class Connections extends Component {
                       <li>
                         <div className="fgt-sec">
                           <input type="radio" name="cc" id="c5" />
-                          <label for="c5">
+                          <label htmlFor="c5">
                             {" "}
                             <span />{" "}
                           </label>
@@ -240,7 +240,7 @@ export default class Connections extends Component {
                       <li>
                         <div className="fgt-sec">
                           <input type="radio" name="cc" id="c6" />
-                          <label for="c6">
+                          <label htmlFor="c6">
                             {" "}
                             <span />{" "}
                           </label>
@@ -249,11 +249,11 @@ export default class Connections extends Component {
                       </li>
                     </ul>
                     <h3>Custom Status</h3>
-                    <div className="search_form">
-                      <form>
+                    <div className="search_htmlForm">
+                      <htmlForm>
                         <input type="text" name="search" />
                         <button type="submit">Ok</button>
-                      </form>
+                      </htmlForm>
                     </div>
 
                     <h3>Setting</h3>

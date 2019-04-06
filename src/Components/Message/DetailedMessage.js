@@ -98,7 +98,7 @@ export default class DetailedMessage extends Component {
             >
               <Avatar
                 alt="Remy Sharp"
-                src="http://chittagongit.com//images/avatar-icon/avatar-icon-4.jpg"
+                src="http://chittagongit.com/images/avatar-icon/avatar-icon-4.jpg"
                 style={{ margin: 10, width: 30, height: 30 }}
               />
               <Typography
@@ -114,7 +114,7 @@ export default class DetailedMessage extends Component {
             </div>
             <div
               style={{
-                width: "30%",
+                width: "40%",
                 display: "flex",
                 flexDirection: "row",
                 justifyContent: "flex-end"
@@ -123,7 +123,6 @@ export default class DetailedMessage extends Component {
               <Typography
                 style={{
                   marginTop: 10,
-                  marginLeft: "20%"
                 }}
               >
                 <p className="text-muted">{this.props.Date}</p>

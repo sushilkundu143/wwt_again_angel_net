@@ -122,10 +122,10 @@ export default class MessageDisplay extends Component {
         <Hidden xsDown>
           <div style={{ display: "flex", flexDirection: "row", height: 500 }}>
             <Paper style={{ margin: 20, padding: 0, width: 900, height: 470 }}>
-              <div
-                style={{ height: 30, backgroundColor: "#0b3253", padding: 5 }}
+              <div className="pt-2 pb-2 col-sm-12"
+                style={{ backgroundColor: "#0b3253"}}
               >
-                <h4 style={{ fontSize: 24, color: "#fff" }}>Recent Messages</h4>
+                <h5 className="text-white h5 mb-0">Recent Messages</h5>
               </div>
 
               <MessageDisplayDesktop />
@@ -141,8 +141,8 @@ export default class MessageDisplay extends Component {
               backgroundColor: "#fff"
             }}
           >
-            <div style={{ height: 30, backgroundColor: "#0b3253", padding: 5 }}>
-              <h4 style={{ fontSize: 24, color: "#fff" }}>All Friends</h4>
+            <div className="col-sm-12 pt-2 pb-2" style={{backgroundColor: "#0b3253"}}>
+              <h5 className="text-white h5 mb-0">All Friends</h5>
             </div>
             <List style={{ overflow: "auto", height: 410 }}>
               {this.state.FriendsArray.map((tab, index) => (

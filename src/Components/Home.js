@@ -304,7 +304,51 @@ export default class Home extends Component {
                         <div id="UserProfile">
                           <UserProfile />
                         </div>
+                        <div className="tags-sec full-width">
+                          <span class="badge badge-pill badge-secondary">Investment</span>
+                          <span class="badge badge-pill badge-secondary">Networking</span>
+                          <span class="badge badge-pill badge-secondary">Teaching</span>
+                          <span class="badge badge-pill badge-secondary">Startup</span>
+                          <span class="badge badge-pill badge-secondary">Incubator</span>
+                          <span class="badge badge-pill badge-secondary">Accelerator</span>
+                          <span class="badge badge-pill badge-secondary">Mentoring</span>
+                          <span class="badge badge-pill badge-secondary">Dialogues</span>
+                          <span class="badge badge-pill badge-secondary">Events</span>
+                          <span class="badge badge-pill badge-secondary">Global Business</span>
+                          <span class="badge badge-pill badge-secondary">Social Work</span>
+                          <span class="badge badge-pill badge-secondary">Games</span>
+                          <span class="badge badge-pill badge-secondary">Innovation</span>
+                          <span class="badge badge-pill badge-secondary">Speaker</span>
+                          <span class="badge badge-pill badge-secondary">Franchise</span>
+                          <span class="badge badge-pill badge-secondary">Partnership</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-lg-6 col-md-8 no-pd">
+                      <div className="main-ws-sec">
+                        <div id="PostJob">
+                          <PostJob />
+                        </div>
 
+                        <div className="posts-section">
+                          <div id="PostBar">
+                            <PostBar />
+                          </div>
+
+                          <div id="topProfiles" />
+                          <div id="posty" />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-lg-3 pd-right-none no-pd">
+                      <div className="right-sidebar">
+                        <div id="TopPosts" />
+
+                        <div id="PostSuggestions" />
+
+                        <div id="MostViewedPeople">
+                          <MostViewedPeople />
+                        </div>
                         <div className="tags-sec full-width">
                           <ul>
                             <li>
@@ -354,33 +398,6 @@ export default class Home extends Component {
                               Copyright 2017
                             </p>
                           </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-lg-6 col-md-8 no-pd">
-                      <div className="main-ws-sec">
-                        <div id="PostJob">
-                          <PostJob />
-                        </div>
-
-                        <div className="posts-section">
-                          <div id="PostBar">
-                            <PostBar />
-                          </div>
-
-                          <div id="topProfiles" />
-                          <div id="posty" />
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-lg-3 pd-right-none no-pd">
-                      <div className="right-sidebar">
-                        <div id="TopPosts" />
-
-                        <div id="PostSuggestions" />
-
-                        <div id="MostViewedPeople">
-                          <MostViewedPeople />
                         </div>
                         <div id="SuggestionsCarousel">
                           {" "}

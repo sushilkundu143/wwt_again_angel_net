@@ -15,6 +15,7 @@ export default class UserProfile extends Component {
     UserProfile:{
       image:{url:'images/profile'},
       name:'himanshu dhankhar',
+      designation: 'Software Developer',
       connections:34,
       followers:155,
       global_rank:34,
@@ -75,7 +76,7 @@ componentDidMount(){
           </div>
           <div className="user-specs">
             <h3>{this.state.UserProfile.name}</h3>
-            <span>{this.state.UserProfile.description}</span>
+            <span>{this.state.UserProfile.designation}</span>
           </div>
         </div>
 
