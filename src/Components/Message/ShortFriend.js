@@ -73,6 +73,10 @@ export default class Messages extends Component {
                 <Typography style={{ marginTop: 10 }}>
                   <p style={{ fontWeight: "bold", fontSize: 17 }}>
                     {this.props.Name}
+                    {this.props.Designation}
+                  </p>
+                  <p style={{ fontWeight: "bold", fontSize: 12 }}>
+                    {this.props.Designation}
                   </p>
                 </Typography>
               </div>

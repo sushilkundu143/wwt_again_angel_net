@@ -12,7 +12,8 @@ import ShortFriend from "./ShortFriend";
 var friendsArray = [
   {
     Name: "Himanshu Dhankhar",
-    Online: false,
+    Online: true,
+    Designation: 'Software Developer',
     LatestMessages: [
       {
         senderId: 3,
@@ -28,6 +29,7 @@ var friendsArray = [
   {
     Name: "Himanshu Dhankhar",
     Online: false,
+    Designation: 'Software Developer',
     LatestMessages: [
       {
         senderId: 3,
@@ -43,6 +45,7 @@ var friendsArray = [
   {
     Name: "Himanshu Dhankhar",
     Online: false,
+    Designation: 'Software Developer',
     LatestMessages: [
       {
         senderId: 3,
@@ -58,6 +61,7 @@ var friendsArray = [
   {
     Name: "Himanshu Dhankhar",
     Online: false,
+    Designation: 'Software Developer',
     LatestMessages: [
       {
         senderId: 3,
@@ -73,6 +77,7 @@ var friendsArray = [
   {
     Name: "Himanshu Dhankhar",
     Online: false,
+    Designation: 'Software Developer',
     LatestMessages: [
       {
         senderId: 3,
@@ -88,6 +93,7 @@ var friendsArray = [
   {
     Name: "Himanshu Dhankhar",
     Online: false,
+    Designation: 'Software Developer',
     LatestMessages: [
       {
         senderId: 3,
